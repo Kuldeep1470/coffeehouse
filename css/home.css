@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header_title {
+  height: 80px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-family: system-ui;
+  box-shadow: 0px 0px 10px #ddd;
+}
+
+.header_title > h1 {
+  color: #4b1f0e;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px #4b1f09;
+}
+
+.get_bill{
+  display: none;
+  position: fixed;
+  width: 100px;
+  top: 90px;
+  left: 90%;
+}
+
+.show{
+  display: block;
+}
+
+.coffee_type {
+  margin: 5vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.coffee_type .coffee_name,
+.bill_title {
+  font-size: 30px;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #444;
+  box-shadow: 0px 0px 4px #ddd;
+}
+
+.coffee_type input:out-of-range {
+  border-bottom:2px solid #e81e3c;
+}
+
+
+.coffee_type input, .bill input {
+  font-size: 20px;
+  color: #444;
+  border: none;
+  outline: none;
+  text-align: left;
+}
+
+.coffee_type button, .bill button ,
+.get_bill button{
+  font-size: 19px;
+  line-height: 1.14285714;
+  font-weight: 500;
+  background: 0 0;
+  border: none;
+  cursor: pointer;
+  outline: inherit;
+  display: flex;
+  z-index: 1;
+  color: white;
+  padding: 8px 15px;
+  transition: color 0.2s ease-out;
+  background-color: dodgerblue;
+  border-radius: 4px;
+}
+
+.coffee_type > .espresso,
+.cappuccino,
+.latte {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #666;
+  min-width: 200px;
+  width: 100%;
+  max-width: 350px;
+  height: 490px;
+  box-shadow: 0px 0px 5px #ddd;
+  border-radius: 23px;
+  margin: 2vw;
+  overflow: hidden;
+}
+
+.espresso table,
+.cappuccino table,
+.latte table
+{  width: 100%;
+  margin: 10% 22%;
+}
+
+.espresso table tr,
+.cappuccino table tr,
+.latte table tr, .bill table tr {
+  font-size: 22px;
+  height: 50px;
+  text-align: left;
+}
+
+.espresso .add-btn ,
+.cappuccino .add-btn,
+.latte .add-btn,
+.bill .add-btn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* position: relative; */
+  /* top: 10%; */
+}
+
+.bill{
+  width: 100%;
+}
+
+.bill_title{
+  font-size: 30px;
+  text-align: center;
+}
+
+.bill table {
+  width: 100%;
+  margin: 5% 10%;
+}
+.bill table th {
+  width: 30%;
+}
+
+.bill_detailes{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #666;
+  min-width: 200px;
+  width: 100%;
+  max-width: 450px;
+  height: 490px;
+  box-shadow: 0px 0px 5px #ddd;
+  border-radius: 23px;
+  margin: auto;
+  margin-bottom: 8%;
+  margin-top: 2%;
+  overflow: hidden;
+}
+
+
+@media screen and (max-width: 950px) {
+}
+
+
+footer{
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer> div{
+    font-size: 35px;
+    font-family: cursive;
+    font-weight: bold;
+    color: #4b1f0e;
+}

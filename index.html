@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee House</title>
+</head>
+
+<link rel="stylesheet" href="./css/home.css">
+
+<body>
+    <header>
+        <div class="header_title">
+            <h1> coffee house </h1>
+        </div>
+    </header>
+    <main>
+
+
+        
+        <section class="coffee_type">
+
+            <div class="espresso">
+                <div class="coffee_name">Espresso</div>
+
+                <table>
+                    <tr>
+                        <th>Milk</th>
+                        <td><input type="number" value="60" min="40" max="79"></td>
+                    </tr>
+                    <tr>
+                        <th>Cream</th>
+                        <td><input type="number" value="75" min="60" max="89"></td>
+                    </tr>
+                    <tr>
+                        <th>latte</th>
+                        <td><input type="number" value="100" min="70" max="124"></td>
+                    </tr>
+                    <tr>
+                        <th>Cups</th>
+                        <td><input class="cups" type="number" value="1" min="1" max="100"></td>
+                    </tr>
+                    <tr>
+                        <th>price</th>
+                        <td class="price"></td>
+                    </tr>
+                </table>
+                <div class="add-btn">
+
+                    <button>Add</button>
+                </div>
+
+            </div>
+
+            <div class="cappuccino">
+                <div class="coffee_name">Cappuccino</div>
+
+                <table>
+                    <tr>
+                        <th>Milk</th>
+                        <td><input type="number" value="80" min="61" max="99"></td>
+                    </tr>
+                    <tr>
+                        <th>Cream</th>
+                        <td><input type="number" value="90" min="74" max="124"></td>
+                    </tr>
+                    <tr>
+                        <th>latte</th>
+                        <td><input type="number" value="125" min="101" max="149"></td>
+                    </tr>
+                    <tr>
+                        <th>Cups</th>
+                        <td><input class="cups" type="number" value="1" min="1" max="100"></td>
+                    </tr>
+                    <tr>
+                        <th>price</th>
+                        <td class="price"></td>
+                    </tr>
+                </table>
+                <div class="add-btn">
+
+                    <button>Add</button>
+                </div>
+            </div>
+
+            <div class="latte">
+                <div class="coffee_name">Latte</div>
+
+
+                <table>
+                    <tr>
+                        <th>Milk</th>
+                        <td><input type="number" value="100" min="81" max="150"></td>
+                    </tr>
+                    <tr>
+                        <th>Cream</th>
+                        <td><input type="number" value="125" min="91" max="159"></td>
+                    </tr>
+                    <tr>
+                        <th>latte</th>
+                        <td><input type="number" value="150" min="126" max="200"></td>
+                    </tr>
+                    <tr>
+                        <th>Cups</th>
+                        <td><input class="cups" type="number" value="1" min="1" max="100"></td>
+                    </tr>
+                    <tr>
+                        <th>price</th>
+                        <td class="price"></td>
+                    </tr>
+                </table>
+                <div class="add-btn">
+                    <button>Add</button>
+                </div>
+
+
+            </div>
+
+        </section>
+
+        <div class="get_bill"> <button>Get bill</button></div>
+        <section class="bill">
+            
+            <div class="bill_detailes">
+                <div class="bill_title">Your bill</div>
+
+                <table>
+                    <tr>
+                        <tr>
+                            <th>Coffee</th>
+                            <th>Cups</th>
+                            <th>Price</th>
+                        </tr>
+                        <th>Espresso</th>
+                        <td class="cups" >0</td>
+                        <td class="coffee_price" >0</td>
+                    </tr>
+                    <tr>
+                        <th>cappuccino</th>
+                        <td class="cups">0</td>
+                        <td class="coffee_price">0</td>
+                    </tr>
+                    <tr>
+                        <th>latte</th>
+                        <td class="cups">0</td>
+                        <td class="coffee_price">0</td>
+                    </tr>
+                    <tr>
+                        <th>Totle price</th>
+                        <td></td>
+                        <td class="price"></td>
+                    </tr>
+                </table>
+
+                <div class="add-btn">
+                    <button onclick="printBill()">Pay bill</button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <div>Thanks for buy our coffee</div>
+    </footer>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
